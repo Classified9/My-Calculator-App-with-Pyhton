@@ -63,3 +63,33 @@ def docpreview():
 # Preview for operations to choose by the user
 def showoperation():
     print('+', '-', '*', '/', '//', '%', 'pi', sep='\n')
+
+
+def call_input1 ():
+    input1 = input('Enter your first number: ')
+    if input1.isdigit() == True :
+        input1 = int(input1)
+        print(type(input1))
+        print(input1)
+        #return input1
+    else:
+        print('Wrong input, Try again!')
+        print()
+        call_input1()
+
+
+
+def call_input2 ():
+    input2 = input('Enter your second number: ')
+    if input2.isdigit() == True :
+        input2 = int(input2)
+        return input2
+    else:
+        print('Wrong input, Try again!')
+        call_input2()
+
+
+# def do_operation(operation):
+#     if operation == '+':
+#         ans = add(input1, input2)
+#         print(input1, operation, input2, '=', ans, end='\n')
